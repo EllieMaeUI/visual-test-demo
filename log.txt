@@ -1,0 +1,174 @@
+
+> webdriverio-tests@0.1.0 wdio
+> wdio run wdio.conf.js
+
+
+Execution of 2 workers started at 2021-11-24T22:25:41.618Z
+
+2021-11-24T22:25:41.681Z INFO @wdio/cli:launcher: Run onPrepare hook
+2021-11-24T22:25:41.681Z INFO @wdio/browserstack-service: browserstackLocal is not enabled - skipping...
+2021-11-24T22:25:41.683Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2021-11-24T22:25:41.683Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2021-11-24T22:25:41.683Z INFO @wdio/local-runner: Start worker 0-0 with arg: run,wdio.conf.js
+2021-11-24T22:25:41.690Z INFO @wdio/local-runner: Start worker 0-1 with arg: run,wdio.conf.js
+[0-0] [90m2021-11-24T22:25:42.158Z[39m [96mINFO[39m [97m@wdio/local-runner[39m: Run worker command: run
+[0-1] [90m2021-11-24T22:25:42.165Z[39m [96mINFO[39m [97m@wdio/local-runner[39m: Run worker command: run
+2021-11-24T22:25:43.024Z INFO @wdio/cli: [0-0] SKIPPED in Chrome - /test/specs/example.e2e.js
+[0-1] RUNNING in Chrome - /test/specs/visual.e2e.js
+[0-1] [90m2021-11-24T22:25:43.587Z[39m [96mINFO[39m [97mwebdriver[39m: Initiate new session using the WebDriver protocol
+[0-1] [90m2021-11-24T22:25:43.589Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] https://hub-cloud.browserstack.com/wd/hub/session
+[0-1] [90m2021-11-24T22:25:43.590Z[39m [96mINFO[39m [97mwebdriver[39m: [33mDATA[39m {
+[0-1]   capabilities: {
+[0-1]     alwaysMatch: {
+[0-1]       'bstack:options': [Object],
+[0-1]       browserName: 'Chrome',
+[0-1]       browserVersion: 'latest'
+[0-1]     },
+[0-1]     firstMatch: [ {} ]
+[0-1]   },
+[0-1]   desiredCapabilities: {
+[0-1]     'bstack:options': {
+[0-1]       os: 'Windows',
+[0-1]       osVersion: '10',
+[0-1]       local: 'false',
+[0-1]       seleniumVersion: '3.141.59'
+[0-1]     },
+[0-1]     browserName: 'Chrome',
+[0-1]     browserVersion: 'latest'
+[0-1]   }
+[0-1] }
+[0-1] [90m2021-11-24T22:25:49.543Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m: Windows 10 Chrome latest session: https://automate.browserstack.com/builds/b2df0e9973a75d3797bfe964f8d106ffdb05547f/sessions/1750d396b162d537e5c922cd16f07a5f198b7577
+[0-1] [90m2021-11-24T22:25:49.552Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m navigateTo("https://webdriver.io/")
+[0-1] [90m2021-11-24T22:25:49.552Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] https://hub-cloud.browserstack.com/wd/hub/session/1750d396b162d537e5c922cd16f07a5f198b7577/url
+[0-1] [90m2021-11-24T22:25:49.552Z[39m [96mINFO[39m [97mwebdriver[39m: [33mDATA[39m { url: 'https://webdriver.io/' }
+[0-1] [92m2021-11-24T22:25:54.062Z[39m [104m[30m INFO  [39m[49m Driver capabilities {
+[0-1]   acceptInsecureCerts: [33mfalse[39m,
+[0-1]   browserName: [32m'chrome'[39m,
+[0-1]   browserVersion: [32m'96.0.4664.45'[39m,
+[0-1]   chrome: {
+[0-1]     chromedriverVersion: [32m'96.0.4664.35 (8df3babf8da8faa8aacb78f4848ef66a93b4944b-refs/branch-heads/4664@{#680})'[39m,
+[0-1]     userDataDir: [32m'C:\\Windows\\proxy\\scoped_dir4056_1600321649'[39m
+[0-1]   },
+[0-1]   [32m'goog:chromeOptions'[39m: { debuggerAddress: [32m'localhost:4983'[39m },
+[0-1]   networkConnectionEnabled: [33mfalse[39m,
+[0-1]   pageLoadStrategy: [32m'normal'[39m,
+[0-1]   platformName: [32m'windows'[39m,
+[0-1]   proxy: {},
+[0-1]   setWindowRect: [33mtrue[39m,
+[0-1]   strictFileInteractability: [33mfalse[39m,
+[0-1]   timeouts: { implicit: [33m0[39m, pageLoad: [33m300000[39m, script: [33m30000[39m },
+[0-1]   unhandledPromptBehavior: [32m'dismiss and notify'[39m,
+[0-1]   [32m'webauthn:extension:credBlob'[39m: [33mtrue[39m,
+[0-1]   [32m'webauthn:extension:largeBlob'[39m: [33mtrue[39m,
+[0-1]   [32m'webauthn:virtualAuthenticators'[39m: [33mtrue[39m,
+[0-1]   [32m'webdriver.remote.sessionid'[39m: [32m'1750d396b162d537e5c922cd16f07a5f198b7577'[39m
+[0-1] }
+[0-1] [90m2021-11-24T22:25:54.064Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m executeScript(<fn>, <object>)
+[0-1] [90m2021-11-24T22:25:54.064Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] https://hub-cloud.browserstack.com/wd/hub/session/1750d396b162d537e5c922cd16f07a5f198b7577/execute/sync
+[0-1] [90m2021-11-24T22:25:54.064Z[39m [96mINFO[39m [97mwebdriver[39m: [33mDATA[39m {
+[0-1]   script: 'return (function(arg){\n' +
+[0-1]     'var s=function(){"use strict";return function(){return window.devicePixelRatio}}();\n' +
+[0-1]     'return s(arg)\n' +
+[0-1]     '}).apply(null, arguments)',
+[0-1]   args: [ undefined ]
+[0-1] }
+[0-1] [90m2021-11-24T22:25:54.336Z[39m [96mINFO[39m [97mwebdriver[39m: [36mRESULT[39m 1
+[0-1] [90m2021-11-24T22:25:54.337Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m executeScript(<fn>, <object>)
+[0-1] [90m2021-11-24T22:25:54.337Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] https://hub-cloud.browserstack.com/wd/hub/session/1750d396b162d537e5c922cd16f07a5f198b7577/execute/sync
+[0-1] [90m2021-11-24T22:25:54.337Z[39m [96mINFO[39m [97mwebdriver[39m: [33mDATA[39m {
+[0-1]   script: 'return (function(arg){\n' +
+[0-1]     'var s=function(){"use strict";return function(){return window.navigator.userAgent}}();\n' +
+[0-1]     'return s(arg)\n' +
+[0-1]     '}).apply(null, arguments)',
+[0-1]   args: [ undefined ]
+[0-1] }
+[0-1] [90m2021-11-24T22:25:54.554Z[39m [96mINFO[39m [97mwebdriver[39m: [36mRESULT[39m Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36
+[0-1] [92m2021-11-24T22:25:54.555Z[39m [104m[30m INFO  [39m[49m Combined driver info {
+[0-1]   browserName: [32m'Chrome'[39m,
+[0-1]   browserVersion: [32m'96'[39m,
+[0-1]   platformName: [32m'windows'[39m,
+[0-1]   platformVersion: [32m'10'[39m,
+[0-1]   isW3C: [33mtrue[39m,
+[0-1]   isMobile: [33mfalse[39m,
+[0-1]   sessionId: [32m'1750d396b162d537e5c922cd16f07a5f198b7577'[39m,
+[0-1]   pixelRatio: [33m1[39m,
+[0-1]   userAgent: [32m'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36'[39m,
+[0-1]   features: { allCookies: [33mtrue[39m }
+[0-1] }
+[0-1] [92m2021-11-24T22:25:54.555Z[39m [104m[30m INFO  [39m[49m Extracting viewport size from web driver using js snippet
+[0-1] [90m2021-11-24T22:25:54.556Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m executeScript(<fn>, <object>)
+[0-1] [90m2021-11-24T22:25:54.556Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] https://hub-cloud.browserstack.com/wd/hub/session/1750d396b162d537e5c922cd16f07a5f198b7577/execute/sync
+[0-1] [90m2021-11-24T22:25:54.556Z[39m [96mINFO[39m [97mwebdriver[39m: [33mDATA[39m {
+[0-1]   script: 'return (function(arg){\n' +
+[0-1]     'var s=function(){"use strict";return function(){var e=0,t=0;return window.innerHeight?t=window.innerHeight:document.documentElement&&document.documentElement.clientHeight?t=document.documentElement.clientHeight:document.body&&document.body.clientHeight&&(t=document.body.clientHeight),window.innerWidth?e=window.innerWidth:document.documentElement&&document.documentElement.clientWidth?e=document.documentElement.clientWidth:document.body&&document.body.clientWidth&&(e=document.body.clientWidth),{width:e,height:t}}}();\n' +
+[0-1]     'return s(arg)\n' +
+[0-1]     '}).apply(null, arguments)',
+[0-1]   args: [ undefined ]
+[0-1] }
+[0-1] [90m2021-11-24T22:25:54.661Z[39m [96mINFO[39m [97mwebdriver[39m: [36mRESULT[39m { height: 887, width: 929 }
+[0-1] [92m2021-11-24T22:25:54.661Z[39m [104m[30m INFO  [39m[49m Extracted viewport size { height: [33m887[39m, width: [33m929[39m }
+[0-1] [92m2021-11-24T22:25:54.661Z[39m [104m[30m INFO  [39m[49m Agent = eyes.webdriverio/5.34.2
+[0-1] [92m2021-11-24T22:25:54.661Z[39m [104m[30m INFO  [39m[49m openBase('webdriver.io website', 'My first webdriver.io test!', '929x887')
+[0-1] [92m2021-11-24T22:25:54.665Z[39m [104m[30m INFO  [39m[49m Eyes server URL is 'https://eyesapi.applitools.com'
+[0-1] [92m2021-11-24T22:25:54.665Z[39m [104m[30m INFO  [39m[49m Timeout = 'undefined'
+[0-1] [92m2021-11-24T22:25:54.665Z[39m [104m[30m INFO  [39m[49m matchTimeout = '2000'
+[0-1] [92m2021-11-24T22:25:54.665Z[39m [104m[30m INFO  [39m[49m Default match settings = 'ImageMatchSettings { {"matchLevel":"Strict","ignoreCaret":true,"useDom":false,"enablePatterns":false,"ignoreDisplacements":false,"ignore":[],"layout":[],"strict":[],"content":[],"accessibility":[],"floating":[]} }'
+[0-1] [92m2021-11-24T22:25:54.665Z[39m [104m[30m INFO  [39m[49m FailureReports = 'ON_CLOSE'
+[0-1] [92m2021-11-24T22:25:54.669Z[39m [104m[30m INFO  [39m[49m No running session, calling start session...
+[0-1] [92m2021-11-24T22:25:54.669Z[39m [104m[30m INFO  [39m[49m startSession()
+[0-1] [92m2021-11-24T22:25:54.670Z[39m [104m[30m INFO  [39m[49m Batch is BatchInfo { {"id":"0e7c7c0f-bb62-425b-82af-74b16cd50826","properties":[],"startedAt":"2021-11-24T22:25:54.670Z","notifyOnCompletion":false} }
+[0-1] [92m2021-11-24T22:25:54.670Z[39m [104m[30m INFO  [39m[49m Setting viewport size to { width: [33m929[39m, height: [33m887[39m } using workaround
+[0-1] [92m2021-11-24T22:25:54.670Z[39m [104m[30m INFO  [39m[49m Extracting viewport size from web driver using js snippet
+[0-1] [90m2021-11-24T22:25:54.671Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m executeScript(<fn>, <object>)
+[0-1] [90m2021-11-24T22:25:54.671Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] https://hub-cloud.browserstack.com/wd/hub/session/1750d396b162d537e5c922cd16f07a5f198b7577/execute/sync
+[0-1] [90m2021-11-24T22:25:54.671Z[39m [96mINFO[39m [97mwebdriver[39m: [33mDATA[39m {
+[0-1]   script: 'return (function(arg){\n' +
+[0-1]     'var s=function(){"use strict";return function(){var e=0,t=0;return window.innerHeight?t=window.innerHeight:document.documentElement&&document.documentElement.clientHeight?t=document.documentElement.clientHeight:document.body&&document.body.clientHeight&&(t=document.body.clientHeight),window.innerWidth?e=window.innerWidth:document.documentElement&&document.documentElement.clientWidth?e=document.documentElement.clientWidth:document.body&&document.body.clientWidth&&(e=document.body.clientWidth),{width:e,height:t}}}();\n' +
+[0-1]     'return s(arg)\n' +
+[0-1]     '}).apply(null, arguments)',
+[0-1]   args: [ undefined ]
+[0-1] }
+[0-1] [90m2021-11-24T22:25:54.757Z[39m [96mINFO[39m [97mwebdriver[39m: [36mRESULT[39m { height: 887, width: 929 }
+[0-1] [92m2021-11-24T22:25:54.757Z[39m [104m[30m INFO  [39m[49m Extracted viewport size { height: [33m887[39m, width: [33m929[39m }
+[0-1] [92m2021-11-24T22:25:54.758Z[39m [104m[30m INFO  [39m[49m Application environment is [OS = ? HostingApp = ? DisplaySize = 929x887]
+[0-1] [92m2021-11-24T22:25:54.759Z[39m [104m[30m INFO  [39m[49m Starting server session...
+[0-1] Error in "My first visual test.should check the webdriver.io website"
+Error: Timeout of 60000ms exceeded. The execution in the test "My first visual test should check the webdriver.io website" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (/Users/abc/workspace/testbed/applitools-test/test/specs/visual.e2e.js)
+    at createTimeoutError (/Users/abc/workspace/testbed/applitools-test/node_modules/mocha/lib/errors.js:498:15)
+    at Test.Runnable._timeoutError (/Users/abc/workspace/testbed/applitools-test/node_modules/mocha/lib/runnable.js:431:10)
+    at Timeout.<anonymous> (/Users/abc/workspace/testbed/applitools-test/node_modules/mocha/lib/runnable.js:246:24)
+    at listOnTimeout (node:internal/timers:557:17)
+    at processTimers (node:internal/timers:500:7)
+[0-1] [90m2021-11-24T22:26:49.560Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m: Update job with sessionId 1750d396b162d537e5c922cd16f07a5f198b7577
+[0-1] [90m2021-11-24T22:26:50.129Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m deleteSession()
+[0-1] [90m2021-11-24T22:26:50.129Z[39m [96mINFO[39m [97mwebdriver[39m: [DELETE] https://hub-cloud.browserstack.com/wd/hub/session/1750d396b162d537e5c922cd16f07a5f198b7577
+[0-1] [90m2021-11-24T22:26:51.040Z[39m [96mINFO[39m [97mwebdriver[39m: [36mRESULT[39m 
+[0-1] FAILED in Chrome - /test/specs/visual.e2e.js
+2021-11-24T22:26:51.162Z INFO @wdio/cli:launcher: Run onComplete hook
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[chrome 96.0.4664.45 windows #0-1] Running: chrome (v96.0.4664.45) on windows
+[chrome 96.0.4664.45 windows #0-1] Session ID: 1750d396b162d537e5c922cd16f07a5f198b7577
+[chrome 96.0.4664.45 windows #0-1]
+[chrome 96.0.4664.45 windows #0-1] » /test/specs/visual.e2e.js
+[chrome 96.0.4664.45 windows #0-1] My first visual test
+[chrome 96.0.4664.45 windows #0-1]    [31m✖[39m should check the webdriver.io website
+[chrome 96.0.4664.45 windows #0-1]
+[chrome 96.0.4664.45 windows #0-1] [31m1 failing (1m 1.4s)[39m
+[chrome 96.0.4664.45 windows #0-1]
+[chrome 96.0.4664.45 windows #0-1] 1) My first visual test should check the webdriver.io website
+[chrome 96.0.4664.45 windows #0-1] [31mTimeout of 60000ms exceeded. The execution in the test "My first visual test should check the webdriver.io website" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (/Users/abc/workspace/testbed/applitools-test/test/specs/visual.e2e.js)[39m
+[chrome 96.0.4664.45 windows #0-1] [90mError: Timeout of 60000ms exceeded. The execution in the test "My first visual test should check the webdriver.io website" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (/Users/abc/workspace/testbed/applitools-test/test/specs/visual.e2e.js)[39m
+[chrome 96.0.4664.45 windows #0-1] [90m    at createTimeoutError (/Users/abc/workspace/testbed/applitools-test/node_modules/mocha/lib/errors.js:498:15)[39m
+[chrome 96.0.4664.45 windows #0-1] [90m    at Test.Runnable._timeoutError (/Users/abc/workspace/testbed/applitools-test/node_modules/mocha/lib/runnable.js:431:10)[39m
+[chrome 96.0.4664.45 windows #0-1] [90m    at Timeout.<anonymous> (/Users/abc/workspace/testbed/applitools-test/node_modules/mocha/lib/runnable.js:246:24)[39m
+[chrome 96.0.4664.45 windows #0-1] [90m    at listOnTimeout (node:internal/timers:557:17)[39m
+[chrome 96.0.4664.45 windows #0-1] [90m    at processTimers (node:internal/timers:500:7)[39m
+
+
+Spec Files:	 0 passed, 1 failed, 1 skipped, 2 total (100% completed) in 00:01:09 
+
+2021-11-24T22:26:51.163Z INFO @wdio/local-runner: Shutting down spawned worker
+2021-11-24T22:26:51.418Z INFO @wdio/local-runner: Waiting for 0 to shut down gracefully
+2021-11-24T22:26:51.418Z INFO @wdio/local-runner: shutting down

@@ -95,6 +95,7 @@ exports.config = {
     //
     // Level of logging verbosity: trace | debug | info | warn | error | silent
     logLevel: 'info',
+    enableEyesLogs: true,
     //
     // Set specific log levels per logger
     // loggers:
